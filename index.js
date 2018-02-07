@@ -12,7 +12,7 @@ var fs = require('fs'),
   Collection = require('postman-collection').Collection;
 
 program
-  .version('1.0.0')
+  .version('1.0.1')
   .option('-f, --filePath <filePath>', 'Path or wildcard to collection files')
   .option('-n, --name [name]', 'New collection name', 'Root collection')
   .option('-o, --output [output]', 'Output file name', './root.collection.json')
