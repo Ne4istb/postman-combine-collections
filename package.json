@@ -1,0 +1,33 @@
+{
+  "name": "postman-combine-collections",
+  "version": "1.0.0",
+  "description": "A command line tool to combine several Postman collections into one.",
+  "main": "index.js",
+  "dependencies": {
+    "commander": "^2.14.1",
+    "glob": "^7.1.2",
+    "glob-fs": "^0.1.7",
+    "postman-collection": "^3.0.7"
+  },
+  "devDependencies": {
+    "prettier": "^1.10.2"
+  },
+  "scripts": {
+    "format": "prettier --print-width 120 --single-quote --write **/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Ne4istb/postman-combine-collections.git"
+  },
+  "keywords": [
+    "postman",
+    "api",
+    "collection"
+  ],
+  "author": "Ne4istb (Andrii Nechytailov)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Ne4istb/postman-combine-collections/issues"
+  },
+  "homepage": "https://github.com/Ne4istb/postman-combine-collections#readme"
+}
