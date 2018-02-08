@@ -12,7 +12,7 @@ var fs = require('fs'),
   Collection = require('postman-collection').Collection;
 
 program
-  .version('1.0.1')
+  .version('1.0.2')
   .option('-f, --filePath <filePath>', 'Path or wildcard to collection files')
   .option('-n, --name [name]', 'New collection name', 'Root collection')
   .option('-o, --output [output]', 'Output file name', './root.collection.json')
@@ -52,7 +52,7 @@ function combine(name, collections) {
     }
   });
 
-  result.items = collections.map(toFolder).filter(item => !!item);
+  result.item = collections.map(toFolder).filter(item => !!item);
 
   return result.toJSON();
 }
