@@ -9,7 +9,6 @@
   "dependencies": {
     "commander": "^2.14.1",
     "glob": "^7.1.2",
-    "glob-fs": "^0.1.7",
     "postman-collection": "^3.0.7"
   },
   "devDependencies": {
