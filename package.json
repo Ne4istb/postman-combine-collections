@@ -1,6 +1,6 @@
 {
   "name": "postman-combine-collections",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A command line tool to combine several Postman collections into one.",
   "main": "index.js",
   "bin": {
