@@ -1,9 +1,45 @@
 {
 	"info": {
 		"name": "Empty collection",
-		"_postman_id": "65dfb6ef-0c4c-778b-55ae-9b2e01c92727",
+		"_postman_id": "a6ea3924-2dcc-9684-5c86-a88e7d38e6ae",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
-	"item": []
+	"item": [],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "f89ebadb-4da7-4d22-9614-169bfe46de2f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "d5179081-ffc4-43bf-b2ab-f555d24878ea",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "247a5798-6f8e-494d-8a1f-84727416af29",
+			"key": "Empty_variable",
+			"value": "empty",
+			"type": "text"
+		},
+		{
+			"id": "271bc4c1-8958-4a68-8c7f-c6ffa62ddba9",
+			"key": "test",
+			"value": "2",
+			"type": "text"
+		}
+	]
 }

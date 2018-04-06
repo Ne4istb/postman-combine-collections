@@ -53,6 +53,8 @@ function combine(name, collections) {
   });
 
   result.item = collections.map(toFolder).filter(item => !!item);
+  result.variable = collections
+    .reduce((result, collection) => result.concat(collection.variable || []), []);
 
   return result.toJSON();
 }
