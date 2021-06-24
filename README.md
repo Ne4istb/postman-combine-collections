@@ -23,3 +23,21 @@ installing from NPM, the following command installs the tool and saves in your `
     -n, --name [name]          New collection name (default: Root collection)
     -o, --output [output]      Output file name (default: ./root.collection.json)
     -h, --help                 output usage information
+
+## Examples
+```terminal
+# Combines all collections in folder 'collections' and outputs it to 'composed.collection.json'
+> postman-combine-collections --name Composed -f 'collections/*.postman_collection.json'  -o composed.collection.json
+```
+
+```terminal
+# Combines Contributor.collection.json and Program_APIs.collection.json and outputs it to 'composed.collection.json'
+> postman-combine-collections --name Composed -f  {Contributor,Program_APIs}.collection.json  -o composed.collection.json
+```
+
+> Check [glob-npm](https://www.npmjs.com/package/glob) and [How To Use Bash Wildcards For Globbing](https://www.shell-tips.com/bash/wildcards-globbing/) to understand file globbing better.
+
+## Known issues
+Q: tool takse only the first file from wild card file path match. 
+
+A: It works in this way on Unix based systems. Check [this issue](https://github.com/Ne4istb/postman-combine-collections/issues/1#issuecomment-379370606) to find the solution.

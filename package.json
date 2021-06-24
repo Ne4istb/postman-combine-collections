@@ -7,12 +7,12 @@
     "postman-combine-collections": "./index.js"
   },
   "dependencies": {
-    "commander": "^2.14.1",
-    "glob": "^7.1.2",
-    "postman-collection": "^3.5.5"
+    "commander": "8.0.0-2",
+    "glob": "7.1.7",
+    "postman-collection": "4.0.0"
   },
   "devDependencies": {
-    "prettier": "^1.10.2"
+    "prettier": "1.10.2"
   },
   "scripts": {
     "format": "prettier --print-width 120 --single-quote --write **/*.js"

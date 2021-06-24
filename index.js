@@ -12,16 +12,16 @@ var fs = require('fs'),
   Collection = require('postman-collection').Collection;
 
 program
-  .version('1.1.0')
+  .version('1.1.2')
   .option('-f, --filePath <filePath>', 'Path or wildcard to collection files')
   .option('-n, --name [name]', 'New collection name', 'Root collection')
   .option('-o, --output [output]', 'Output file name', './root.collection.json')
   .description('A command line tool to combine several Postman collections into one')
   .parse(process.argv);
 
-processFiles(program.filePath, program.name, program.output);
+processFiles(program.opts());
 
-function processFiles(filePath, name, output) {
+function processFiles({filePath, name, output}) {
   const collections = readFiles(filePath);
   const collection = combine(name, collections);
 
